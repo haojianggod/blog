@@ -79,13 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="自娱自乐">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="example  12345678910111213141516171819202122232425262728293031323334353637  #!/usr/local/bin/python# -*- coding:utf-8 -*-from Queue import Emptyfrom queue import Queueclass Producer(object):	def __ini">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python Queue学习">
+<meta property="og:url" content="http://yoursite.com/2019/05/02/python-Queue学习/index.html">
 <meta property="og:site_name" content="自娱自乐">
+<meta property="og:description" content="example  12345678910111213141516171819202122232425262728293031323334353637  #!/usr/local/bin/python# -*- coding:utf-8 -*-from Queue import Emptyfrom queue import Queueclass Producer(object):	def __ini">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://rpig-images.oss-cn-beijing.aliyuncs.com/python%E5%AD%A6%E4%B9%A0/queue-put%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg">
+<meta property="og:updated_time" content="2019-05-02T09:00:12.847Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="自娱自乐">
+<meta name="twitter:title" content="python Queue学习">
+<meta name="twitter:description" content="example  12345678910111213141516171819202122232425262728293031323334353637  #!/usr/local/bin/python# -*- coding:utf-8 -*-from Queue import Emptyfrom queue import Queueclass Producer(object):	def __ini">
+<meta name="twitter:image" content="http://rpig-images.oss-cn-beijing.aliyuncs.com/python%E5%AD%A6%E4%B9%A0/queue-put%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg">
 
 
 
@@ -115,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/02/python-Queue学习/">
 
 
 
 
 
-  <title>自娱自乐</title>
+  <title>python Queue学习 | 自娱自乐</title>
   
 
 
@@ -140,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +219,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2019/05/02/python-Queue学习/" itemprop="url">python Queue学习</a></h1>
+          <h1 class="post-title" itemprop="name headline">python Queue学习</h1>
         
 
         <div class="post-meta">
@@ -298,9 +301,7 @@
       
 
       
-        
-          
-            <h4 id="example"><a href="#example" class="headerlink" title="example"></a>example</h4>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">#!/usr/local/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> Queue <span class="keyword">import</span> Empty</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> queue <span class="keyword">import</span> Queue</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Producer</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, q)</span>:</span></span><br><span class="line">		self._queue = q</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">produce</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">			self._queue.put(<span class="string">"msg: %d"</span> % i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Consumer</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, q)</span>:</span></span><br><span class="line">		self._queue = q</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">consume</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">			<span class="keyword">try</span>:</span><br><span class="line">				msg = self._queue.get(block=<span class="literal">False</span>, timeout=<span class="number">10</span>)</span><br><span class="line">				print(<span class="string">"consume: %s"</span> % msg)</span><br><span class="line">			<span class="keyword">except</span> Empty <span class="keyword">as</span> e:</span><br><span class="line">				print(<span class="string">"queue is empty, break"</span>)</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">	q = Queue(<span class="number">20</span>)</span><br><span class="line">	producer = Producer(q)</span><br><span class="line">	consumer = Consumer(q)</span><br><span class="line"></span><br><span class="line">	producer.produce()</span><br><span class="line">	consumer.consume()</span><br></pre></td></tr></table></figure>
+        <h4 id="example"><a href="#example" class="headerlink" title="example"></a>example</h4>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">#!/usr/local/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> Queue <span class="keyword">import</span> Empty</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> queue <span class="keyword">import</span> Queue</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Producer</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, q)</span>:</span></span><br><span class="line">		self._queue = q</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">produce</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">			self._queue.put(<span class="string">"msg: %d"</span> % i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Consumer</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, q)</span>:</span></span><br><span class="line">		self._queue = q</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">consume</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">			<span class="keyword">try</span>:</span><br><span class="line">				msg = self._queue.get(block=<span class="literal">False</span>, timeout=<span class="number">10</span>)</span><br><span class="line">				print(<span class="string">"consume: %s"</span> % msg)</span><br><span class="line">			<span class="keyword">except</span> Empty <span class="keyword">as</span> e:</span><br><span class="line">				print(<span class="string">"queue is empty, break"</span>)</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">	q = Queue(<span class="number">20</span>)</span><br><span class="line">	producer = Producer(q)</span><br><span class="line">	consumer = Consumer(q)</span><br><span class="line"></span><br><span class="line">	producer.produce()</span><br><span class="line">	consumer.consume()</span><br></pre></td></tr></table></figure>
 <h4 id="代码分析-流程图"><a href="#代码分析-流程图" class="headerlink" title="代码分析 + 流程图"></a>代码分析 + 流程图</h4><h5 id="init-方法"><a href="#init-方法" class="headerlink" title="init 方法"></a><strong>init</strong> 方法</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, maxsize=<span class="number">0</span>)</span>:</span></span><br><span class="line">    self.maxsize = maxsize</span><br><span class="line">    self._init(maxsize)</span><br><span class="line">    <span class="comment"># mutex must be held whenever the queue is mutating.  All methods</span></span><br><span class="line">    <span class="comment"># that acquire mutex must release it before returning.  mutex</span></span><br><span class="line">    <span class="comment"># is shared between the three conditions, so acquiring and</span></span><br><span class="line">    <span class="comment"># releasing the conditions also acquires and releases mutex.</span></span><br><span class="line">    self.mutex = _threading.Lock()</span><br><span class="line">    <span class="comment"># Notify not_empty whenever an item is added to the queue; a</span></span><br><span class="line">    <span class="comment"># thread waiting to get is notified then.</span></span><br><span class="line">    self.not_empty = _threading.Condition(self.mutex)</span><br><span class="line">    <span class="comment"># Notify not_full whenever an item is removed from the queue;</span></span><br><span class="line">    <span class="comment"># a thread waiting to put is notified then.</span></span><br><span class="line">    self.not_full = _threading.Condition(self.mutex)</span><br><span class="line">    <span class="comment"># Notify all_tasks_done whenever the number of unfinished tasks</span></span><br><span class="line">    <span class="comment"># drops to zero; thread waiting to join() is notified to resume</span></span><br><span class="line">    self.all_tasks_done = _threading.Condition(self.mutex)</span><br><span class="line">    self.unfinished_tasks = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Initialize the queue representation</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">_init</span><span class="params">(self, maxsize)</span>:</span></span><br><span class="line">    self.queue = deque()</span><br></pre></td></tr></table></figure>
 <ul>
 <li>maxsize： 最大队列长队，如果 maxsize&lt;=0， 长度不限制</li>
@@ -328,8 +329,6 @@
 </li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -346,236 +345,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/04/30/page/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="haojiang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="自娱自乐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2019/04/30/page/" itemprop="url">hexo命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-30T18:15:47+08:00">
-                2019-04-30
-              </time>
+              <a href="/blog/2019/04/30/page/" rel="next" title="hexo命令">
+                <i class="fa fa-chevron-left"></i> hexo命令
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blogs</span><br></pre></td></tr></table></figure>
-<h3 id="new"><a href="#new" class="headerlink" title="new"></a>new</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>如果没有layout，则用默认的 default_layout(配置在_config.yml中)</li>
-<li>如果title 中有空格，就需要用引号包起来</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-p, –path</td>
-<td>Post path. Customize the path of the post.</td>
-</tr>
-<tr>
-<td>-r, –replace</td>
-<td>Replace the current post if existed.</td>
-</tr>
-<tr>
-<td>-s, –slug</td>
-<td>Post slug. Customize the URL of the post.</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page --path about/me &quot;About me&quot;</span><br></pre></td></tr></table></figure>
-<p>will create source/about/me.md file with the title “About me” set in the front matter.</p>
-<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-d, –deploy</td>
-<td>Deploy after generation finishes</td>
-</tr>
-<tr>
-<td>-w, –watch</td>
-<td>Watch file changes</td>
-</tr>
-<tr>
-<td>-b, –bail</td>
-<td>Raise an error if any unhandled exception is thrown during generation</td>
-</tr>
-<tr>
-<td>-f, –force</td>
-<td>Force regenerate</td>
-</tr>
-</tbody>
-</table>
-<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p>Publishes a draft.</p>
-<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>Starts a local server. By default, this is at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>.</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-p, –port</td>
-<td>Override default port</td>
-</tr>
-<tr>
-<td>-s, –static</td>
-<td>Only serve static files</td>
-</tr>
-<tr>
-<td>-l, –log</td>
-<td>Enable logger. Override logger format.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>Deploys your website.</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-g, –generate</td>
-<td>Generate before deployment</td>
-</tr>
-</tbody>
-</table>
-<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
-<p>Renders files.<br>|Option |  Description |<br>|——–|————–|<br>| -o, –output | Output destination|</p>
-<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">主题： https://hexo.io/themes/</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br><span class="line"></span><br><span class="line">git clone https://github.com/dongyuanxin/theme-ad themes/ad</span><br></pre></td></tr></table></figure>
-<ul>
-<li>引用：<a href="https://hexo.io/docs/commands" target="_blank" rel="noopener">https://hexo.io/docs/commands</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -585,138 +376,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/04/30/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="haojiang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="自娱自乐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2019/04/30/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-30T18:05:08+08:00">
-                2019-04-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -724,6 +388,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -744,8 +412,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -787,6 +464,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#example"><span class="nav-number">1.</span> <span class="nav-text">example</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码分析-流程图"><span class="nav-number">2.</span> <span class="nav-text">代码分析 + 流程图</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#init-方法"><span class="nav-number">2.1.</span> <span class="nav-text">init 方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#put-方法"><span class="nav-number">2.2.</span> <span class="nav-text">put 方法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -920,6 +613,10 @@
   
 
   
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

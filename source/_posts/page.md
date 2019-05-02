@@ -86,7 +86,7 @@ $ hexo render <file1> [file2] ...
 ```
 
 Renders files.
-Option |  Description |
+|Option |  Description |
 |--------|--------------|
 | -o, --output | Output destination|
 
@@ -97,6 +97,7 @@ Option |  Description |
 ## 更换主题
 
 ```
+主题： https://hexo.io/themes/
 git clone https://github.com/iissnan/hexo-theme-next themes/next
 
 git clone https://github.com/dongyuanxin/theme-ad themes/ad
