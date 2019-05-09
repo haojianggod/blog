@@ -8,8 +8,8 @@ subtitle:
 description:
 keywords:
 author: haojiang
-language:
-timezone:
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -74,6 +74,21 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+# reward_comment:
+wechatpay: /wechatpay.jpg
+alipay: /alipay.jpg
+
+
+# Social links
+
+social:
+  Wechat: /wechat
+  zhihu: https://www.zhihu.com/people/shu-ke-da-fei-ji-98/activities
+
+
+# share
+jiathis: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

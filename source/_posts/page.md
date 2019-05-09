@@ -86,12 +86,17 @@ $ hexo render <file1> [file2] ...
 ```
 
 Renders files.
+
 |Option |  Description |
 |--------|--------------|
 | -o, --output | Output destination|
 
 
+### hexo next 为文章添加分类
 
+```
+链接： https://whx4j8.github.io/2016/03/16/hexo-next-%E6%B7%BB%E5%8A%A0%E4%B8%BA%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB/
+```
 
 
 ## 更换主题

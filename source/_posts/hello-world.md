@@ -1,38 +1,76 @@
 ---
-title: Hello World
+title: Hexo + GitHub 搭建博客
+date: 2019-04-29 18:15:47
+tags: hexo
+categories:
+- hexo
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+### Install Nodejs
 
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
+```shell
+brew install node
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+### Install Hexo
 
-### Run server
-
-``` bash
-$ hexo server
+```shell
+npm install -g hexo-cli
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
+### Init blog
 
-### Generate static files
+1) init
 
-``` bash
-$ hexo generate
+```shell
+hexo init blog
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+2) demo test
 
-### Deploy to remote sites
+```shell
 
-``` bash
-$ hexo deploy
+hexo n "hello world"
+
+hexo g
+
+hexo s
 ```
 
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+###  github
+1）github create blog project
+
+2）`_config.yml` 配置
+
+```
+deploy:
+  type: git
+  repo: https://github.com/haojianggod/blog.git
+  branch: master
+
+
+```
+这样我们执行hexo deploy 时候就知道该把blog 部署到哪里
+
+
+### install hexo-deployer-git plugin
+
+```shell
+
+npm install hexo-deployer-git --save
+```
+
+### deploy blog
+
+```shell
+
+hexo clean
+
+hexo d -g
+
+```
+
+这样就将blog部署到github上了，直接去haojiang.github.io/blog 查看
+
+
+INDEX: https://zhuanlan.zhihu.com/p/26625249
